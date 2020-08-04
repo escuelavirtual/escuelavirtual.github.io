@@ -6,6 +6,8 @@
 
 ### Casos de uso.
 
+---
+
 **Casos de uso:** Estudiante solicita registro **Codigo:**  CU1
 
 **Autor:** Estudiante
@@ -22,6 +24,7 @@
 
 **Resumen:** El estudiante al completar un formulario de registro, se procede a la verificacion de los datos y al registro del estudiante en el sistema.
 
+---
 
 **Casos de uso:**  Usuario inicia sesion **Codigo:**  CU2
 
