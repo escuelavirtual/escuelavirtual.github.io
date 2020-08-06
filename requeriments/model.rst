@@ -53,17 +53,42 @@ Diccionario de datos
 
 USER
 ^^^^^^
-:Clave: P
-:Campo: id_user
-:Tipo de Atributo: Integer
-:Es Nulo: NULL
-:Descripción: Almacena el código que identifica a cada usuario
 
-### STUDENT
-|Clave|Campo|Tipo de Atributo|Es Nulo|Descripción|
-|-|-|-|-|-|
-|PFK|id_student|Integer|NULL|Almacena el código que identifica a cada estudiante|
+.. list-table:: 
+    :widths: 5 10 10 10 50
+    :header-rows: 1
+    :stub-columns: 1
 
+    * - Clave
+      - Campo
+      - Tipo de Atributo
+      - Es Nulo
+      - DESCRIPCIÓN
+    * - P
+      - id_user
+      - Integer
+      - NULL
+      - Almacena el código que identifica a cada usuario
+      
+STUDENT
+^^^^^^
+
+.. list-table:: 
+    :widths: 5 10 10 10 50
+    :header-rows: 1
+    :stub-columns: 1
+
+    * - Clave
+      - Campo
+      - Tipo de Atributo
+      - Es Nulo
+      - DESCRIPCIÓN
+    * - PFK
+      - id_student
+      - Integer
+      - NULL
+      - Almacena el código que identifica a cada estudiante
+      
 ### PROFESSOR
 |Clave|Campo|Tipo de Atributo|Es Nulo|Descripción|
 |-|-|-|-|-|
