@@ -1,7 +1,7 @@
 .. include:: HOME.rst
 
 .. toctree::
-   :caption: Theme Documentation
+   :caption: Documentation
    :maxdepth: 2
 
    installing
@@ -27,6 +27,7 @@
 .. toctree::
     :maxdepth: 3
     :numbered:
-    :caption: Requerimientos
+    :caption: Requeriments
 
+    requeriments/model
     requeriments/cases
