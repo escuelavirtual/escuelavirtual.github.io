@@ -4,8 +4,10 @@ Diagrama Entidad Relación
 ***************
 
 
-## Diagrama Entidad Relación
-![v1 0](https://user-images.githubusercontent.com/58009248/89479317-1c4b1d00-d758-11ea-97af-5718a301042a.png)
+Diagrama Entidad Relación ![v1 0]
+-----------
+
+.. image:: https://user-images.githubusercontent.com/58009248/89479317-1c4b1d00-d758-11ea-97af-5718a301042a.png
 
 
 Descripción de tablas
