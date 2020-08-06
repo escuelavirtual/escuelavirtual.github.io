@@ -101,7 +101,7 @@ html_use_opensearch = 'https://docs.python.org/'
 html_static_path = ['tools/static']
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'python' + release.replace('.', '')
+htmlhelp_basename = 'python'
 
 # Split the index
 html_split_index = True
