@@ -1,34 +1,3 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@alejandro088 
-python
-/
-cpython
-1.2k
-32.9k
-15.7k
-Code
-Pull requests
-1.3k
-Actions
-Security
-Insights
-cpython/Doc/conf.py /
-@pablogsal
-pablogsal bpo-40939: Use the new grammar for the grammar specification document…
-…
-Latest commit 72cabb2 10 days ago
- History
- 32 contributors
-@birkenfeld@tiran@benjaminp@orsenthil@isidentical@1st1@rhettinger@ned-deily@JulienPalard@refi64@zware@matrixise
-230 lines (181 sloc)  6.79 KB
-  
 #
 # Python documentation build configuration file
 #
@@ -259,15 +228,3 @@ linkcheck_ignore = [r'https://bugs.python.org/(issue)?\d+',
 
 # Relative filename of the reference count data file.
 refcount_file = 'data/refcounts.dat'
-© 2020 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
