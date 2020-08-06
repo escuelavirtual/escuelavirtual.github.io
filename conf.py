@@ -155,7 +155,7 @@ latex_documents = [
      'Python Setup and Usage', _stdauthor, 'manual'),
     ('faq/index', 'faq.tex',
      'Python Frequently Asked Questions', _stdauthor, 'manual'),
-    ('whatsnew/' + version, 'whatsnew.tex',
+    ('whatsnew/', 'whatsnew.tex',
      'What\'s New in Python', 'A. M. Kuchling', 'howto'),
 ]
 # Collect all HOWTOs individually
