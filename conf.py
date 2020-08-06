@@ -158,14 +158,6 @@ latex_documents = [
     ('whatsnew/', 'whatsnew.tex',
      'What\'s New in Python', 'A. M. Kuchling', 'howto'),
 ]
-# Collect all HOWTOs individually
-latex_documents.extend(('howto/' + fn[:-4], 'howto-' + fn[:-4] + '.tex',
-                        '', _stdauthor, 'howto')
-                       for fn in os.listdir('howto')
-                       if fn.endswith('.rst') and fn != 'index.rst')
-
-# Documents to append as an appendix to all manuals.
-latex_appendices = ['glossary', 'about', 'license', 'copyright']
 
 # Options for Epub output
 # -----------------------
@@ -219,8 +211,3 @@ linkcheck_ignore = [r'https://bugs.python.org/(issue)?\d+',
                     r'http://www.python.org/dev/peps/pep-\d+']
 
 
-# Options for extensions
-# ----------------------
-
-# Relative filename of the reference count data file.
-refcount_file = 'data/refcounts.dat'
