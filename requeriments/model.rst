@@ -1,6 +1,6 @@
 
 ***************
-Diagrama Entidad Relación
+Modelo de datos
 ***************
 
 
