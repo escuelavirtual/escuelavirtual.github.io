@@ -1,4 +1,4 @@
-.. include:: ../README.rst
+.. include:: HOME.rst
 
 .. toctree::
    :caption: Theme Documentation
@@ -27,6 +27,6 @@
 .. toctree::
     :maxdepth: 3
     :numbered:
-    :caption: This is an incredibly long caption for a long menu
+    :caption: Requerimientos
 
     requeriments/cases
