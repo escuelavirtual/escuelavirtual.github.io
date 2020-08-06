@@ -7,6 +7,7 @@ Tareas a desarrollar, con sus test (preferentemente), y sus endpoint.
 
 .. contents:: Table of Contents
 
+
 Estudiante solicita registro
 ==============
 
@@ -27,7 +28,7 @@ Estudiante solicita registro
 **Resumen**: El estudiante al completar un formulario de registro, se procede a la verificación de los datos y al registro del estudiante en el sistema.
 
 
- Usuario inicia sesión
+Usuario inicia sesión
 ==============
 
 **Casos de uso:** Usuario inicia sesión **Codigo:** CU2
