@@ -1,213 +1,120 @@
-#
-# Python documentation build configuration file
-#
-# This file is execfile()d with the current directory set to its containing dir.
-#
-# The contents of this file are pickled, so don't put values in the namespace
-# that aren't pickleable (module imports are okay, they're removed automatically).
+# -*- coding: utf-8 -*-
 
-import sys, os, time
-sys.path.append(os.path.abspath('tools/extensions'))
-sys.path.append(os.path.abspath('includes'))
+import sys
+import os
+import re
 
-# General configuration
-# ---------------------
+# If we are building locally, or the build on Read the Docs looks like a PR
+# build, prefer to use the version of the theme in this repo, not the installed
+# version of the theme.
+def is_development_build():
+    # PR builds have an interger version
+    re_version = re.compile(r'^[\d]+$')
+    if 'READTHEDOCS' in os.environ:
+        version = os.environ.get('READTHEDOCS_VERSION', '')
+        if re_version.match(version):
+            return True
+        return False
+    return True
 
-extensions = ['sphinx.ext.coverage', 'sphinx.ext.doctest',
-              'pyspecific', 'c_annotations', 'escape4chm',
-              'asdl_highlight', 'peg_highlight']
+if is_development_build():
+    sys.path.insert(0, os.path.abspath('..'))
+sys.path.append(os.path.abspath('./demo/'))
 
+import sphinx_rtd_theme
+from sphinx.locale import _
 
-doctest_global_setup = '''
-try:
-    import _tkinter
-except ImportError:
-    _tkinter = None
-'''
+project = u'Read the Docs Sphinx Theme'
+slug = re.sub(r'\W+', '-', project.lower())
+version = '0.5.0'
+release = '0.5.0'
+author = u'Dave Snider, Read the Docs, Inc. & contributors'
+copyright = author
+language = 'en'
 
-manpages_url = 'https://manpages.debian.org/{path}'
+extensions = [
+    'sphinx.ext.intersphinx',
+    'sphinx.ext.autodoc',
+    'sphinx.ext.mathjax',
+    'sphinx.ext.viewcode',
+    'sphinxcontrib.httpdomain',
+    'sphinx_rtd_theme',
+]
 
-# General substitutions.
-project = 'Python'
-copyright = '2001-%s, Python Software Foundation' % time.strftime('%Y')
+templates_path = ['_templates']
+source_suffix = '.rst'
+exclude_patterns = []
+locale_dirs = ['locale/']
+gettext_compact = False
 
+master_doc = 'index'
+suppress_warnings = ['image.nonlocal_uri']
+pygments_style = 'default'
 
-# There are two options for replacing |today|: either, you set today to some
-# non-false value, then it is used:
-today = ''
-# Else, today_fmt is used as the format for a strftime call.
-today_fmt = '%B %d, %Y'
-
-# By default, highlight as Python 3.
-highlight_language = 'python3'
-
-# Minimum version of sphinx required
-needs_sphinx = '1.8'
-
-# Ignore any .rst files in the venv/ directory.
-exclude_patterns = ['venv/*', 'README.rst']
-venvdir = os.getenv('VENVDIR')
-if venvdir is not None:
-    exclude_patterns.append(venvdir + '/*')
-
-# Disable Docutils smartquotes for several translations
-smartquotes_excludes = {
-    'languages': ['ja', 'fr', 'zh_TW', 'zh_CN'], 'builders': ['man', 'text'],
+intersphinx_mapping = {
+    'rtd': ('https://docs.readthedocs.io/en/latest/', None),
+    'sphinx': ('http://www.sphinx-doc.org/en/stable/', None),
 }
 
-# Avoid a warning with Sphinx >= 2.0
-master_doc = 'contents'
-
-# Options for HTML output
-# -----------------------
-
-# Use our custom theme.
-html_theme = 'python_docs_theme'
-html_theme_path = ['tools']
+html_theme = 'sphinx_rtd_theme'
 html_theme_options = {
-    'collapsiblesidebar': True,
-    'issues_url': 'https://docs.python.org/3/bugs.html',
-    'root_include_title': False   # We use the version switcher instead.
+    'logo_only': True,
+    'navigation_depth': 5,
 }
+html_context = {}
 
-# Short title used e.g. for <title> HTML tags.
-html_short_title = '%s Documentation'
+if not 'READTHEDOCS' in os.environ:
+    html_static_path = ['_static/']
+    html_js_files = ['debug.js']
 
-# If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
-# using the given strftime format.
-html_last_updated_fmt = '%b %d, %Y'
+    # Add fake versions for local QA of the menu
+    html_context['test_versions'] = list(map(
+        lambda x: str(x / 10),
+        range(1, 100)
+    ))
 
-# Path to find HTML templates.
-templates_path = ['tools/templates']
+html_logo = "demo/static/logo-wordmark-light.svg"
+html_show_sourcelink = True
 
-# Custom sidebar templates, filenames relative to this file.
-html_sidebars = {
-    # Defaults taken from http://www.sphinx-doc.org/en/stable/config.html#confval-html_sidebars
-    # Removes the quick search block
-    '**': ['localtoc.html', 'relations.html', 'customsourcelink.html'],
-    'index': ['indexsidebar.html'],
-}
-
-# Additional templates that should be rendered to pages.
-html_additional_pages = {
-    'download': 'download.html',
-    'index': 'indexcontent.html',
-}
-
-# Output an OpenSearch description file.
-html_use_opensearch = 'https://docs.python.org/'
-
-# Additional static files.
-html_static_path = ['tools/static']
-
-# Output file base name for HTML help builder.
-htmlhelp_basename = 'python'
-
-# Split the index
-html_split_index = True
+htmlhelp_basename = slug
 
 
-# Options for LaTeX output
-# ------------------------
-
-latex_engine = 'xelatex'
-
-# Get LaTeX to handle Unicode correctly
-latex_elements = {
-}
-
-# Additional stuff for the LaTeX preamble.
-latex_elements['preamble'] = r'''
-\authoraddress{
-  \sphinxstrong{Python Software Foundation}\\
-  Email: \sphinxemail{docs@python.org}
-}
-\let\Verbatim=\OriginalVerbatim
-\let\endVerbatim=\endOriginalVerbatim
-\setcounter{tocdepth}{2}
-'''
-
-# The paper size ('letter' or 'a4').
-latex_elements['papersize'] = 'a4'
-
-# The font size ('10pt', '11pt' or '12pt').
-latex_elements['pointsize'] = '10pt'
-
-# Grouping the document tree into LaTeX files. List of tuples
-# (source start file, target name, title, author, document class [howto/manual]).
-_stdauthor = r'Guido van Rossum\\and the Python development team'
 latex_documents = [
-    ('c-api/index', 'c-api.tex',
-     'The Python/C API', _stdauthor, 'manual'),
-    ('distributing/index', 'distributing.tex',
-     'Distributing Python Modules', _stdauthor, 'manual'),
-    ('extending/index', 'extending.tex',
-     'Extending and Embedding Python', _stdauthor, 'manual'),
-    ('installing/index', 'installing.tex',
-     'Installing Python Modules', _stdauthor, 'manual'),
-    ('library/index', 'library.tex',
-     'The Python Library Reference', _stdauthor, 'manual'),
-    ('reference/index', 'reference.tex',
-     'The Python Language Reference', _stdauthor, 'manual'),
-    ('tutorial/index', 'tutorial.tex',
-     'Python Tutorial', _stdauthor, 'manual'),
-    ('using/index', 'using.tex',
-     'Python Setup and Usage', _stdauthor, 'manual'),
-    ('faq/index', 'faq.tex',
-     'Python Frequently Asked Questions', _stdauthor, 'manual'),
-    ('whatsnew/', 'whatsnew.tex',
-     'What\'s New in Python', 'A. M. Kuchling', 'howto'),
+  ('index', '{0}.tex'.format(slug), project, author, 'manual'),
 ]
 
-# Options for Epub output
-# -----------------------
-
-epub_author = 'Python Documentation Authors'
-epub_publisher = 'Python Software Foundation'
-
-# Options for the coverage checker
-# --------------------------------
-
-# The coverage checker will ignore all modules/functions/classes whose names
-# match any of the following regexes (using re.match).
-coverage_ignore_modules = [
-    r'[T|t][k|K]',
-    r'Tix',
-    r'distutils.*',
+man_pages = [
+    ('index', slug, project, [author], 1)
 ]
 
-coverage_ignore_functions = [
-    'test($|_)',
+texinfo_documents = [
+  ('index', slug, project, author, slug, project, 'Miscellaneous'),
 ]
 
-coverage_ignore_classes = [
-]
 
-# Glob patterns for C source files for C API coverage, relative to this directory.
-coverage_c_path = [
-    '../Include/*.h',
-]
+# Extensions to theme docs
+def setup(app):
+    from sphinx.domains.python import PyField
+    from sphinx.util.docfields import Field
 
-# Regexes to find C items in the source files.
-coverage_c_regexes = {
-    'cfunction': (r'^PyAPI_FUNC\(.*\)\s+([^_][\w_]+)'),
-    'data': (r'^PyAPI_DATA\(.*\)\s+([^_][\w_]+)'),
-    'macro': (r'^#define ([^_][\w_]+)\(.*\)[\s|\\]'),
-}
-
-# The coverage checker will ignore all C items whose names match these regexes
-# (using re.match) -- the keys must be the same as in coverage_c_regexes.
-coverage_ignore_c_items = {
-#    'cfunction': [...]
-}
-
-
-# Options for the link checker
-# ----------------------------
-
-# Ignore certain URLs.
-linkcheck_ignore = [r'https://bugs.python.org/(issue)?\d+',
-                    # Ignore PEPs for now, they all have permanent redirects.
-                    r'http://www.python.org/dev/peps/pep-\d+']
-
-
+    app.add_object_type(
+        'confval',
+        'confval',
+        objname='configuration value',
+        indextemplate='pair: %s; configuration value',
+        doc_field_types=[
+            PyField(
+                'type',
+                label=_('Type'),
+                has_arg=False,
+                names=('type',),
+                bodyrolename='class'
+            ),
+            Field(
+                'default',
+                label=_('Default'),
+                has_arg=False,
+                names=('default',),
+            ),
+        ]
+    )
