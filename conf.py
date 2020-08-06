@@ -31,10 +31,6 @@ manpages_url = 'https://manpages.debian.org/{path}'
 project = 'Python'
 copyright = '2001-%s, Python Software Foundation' % time.strftime('%Y')
 
-# We look for the Include/patchlevel.h file in the current Python source tree
-# and replace the values accordingly.
-import patchlevel
-version, release = patchlevel.get_version_info()
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:
