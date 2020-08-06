@@ -71,7 +71,7 @@ html_theme_options = {
 }
 
 # Short title used e.g. for <title> HTML tags.
-html_short_title = '%s Documentation' % release
+html_short_title = '%s Documentation'
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
