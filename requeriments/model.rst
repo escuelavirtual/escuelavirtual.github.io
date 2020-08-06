@@ -89,65 +89,257 @@ STUDENT
       - NULL
       - Almacena el código que identifica a cada estudiante
       
-### PROFESSOR
-|Clave|Campo|Tipo de Atributo|Es Nulo|Descripción|
-|-|-|-|-|-|
-|PFK|id_professor|Integer|NULL|Almacena el código que identifica a cada profesor|
-||valuation|Integer|Almacena la valoración que tiene un profesor|
+PROFESSOR
+^^^^^^
 
-### COURSE
-|Clave|Campo|Tipo de Atributo|Es Nulo|Descripción|
-|-|-|-|-|-|
-|PFK|id_course|Varchar(50)|NOT NULL|Almacena el código que identifica un curso|
-|FK|id_professor|Integer|NOT NULL|Es el profesor que imparte el curso|
-||title|Varchar(50)|NOT NULL|Nombre que describa el curso|
-||description|Varchar(50)|NOT NULL|Almacena una descripción más detallada del curso|
-||syllabus|Varchar(500)|NOT NULL|Almacena el temario del curso|
-||start_date|Date|NULL|Almacena la fecha inicial del curso|
-||end_date|Date|NULL|Almacena la fecha final del curso|
-||requirements|Varvhar(50)|NOT NULL|**Este campo está en proceso de discusión**|
-||isPrivate|Bool|NOT NULL|Bandera de estado que determina si el curso es privado o público **Este campo está en proceso de discusión**|
+.. list-table:: 
+    :widths: 5 10 10 10 50
+    :header-rows: 1
+    :stub-columns: 1
 
+    * - Clave
+      - Campo
+      - Tipo de Atributo
+      - Es Nulo
+      - DESCRIPCIÓN
+    * - PFK
+      - id_professor
+      - Integer
+      - NULL
+      - Almacena el código que identifica a cada profesor
+      
+COURSE
+^^^^^^
 
-### COURSE_HISTORY
-|Clave|Campo|Tipo de Atributo|Es Nulo|Descripción|
-|-|-|-|-|-|
-|P|id_course_history|Integer|NOT NULL|**Este campo debe ser discutido**|
-|FK|id_professor|Integer|NOT NULL|Profesor que impartió el curso|
-||id_course|VARCHAR(50)|NOT NULL|Almacena el código que identifica a cada curso impartido por un profesor
+.. list-table:: 
+    :widths: 5 10 10 10 50
+    :header-rows: 1
+    :stub-columns: 1
 
-### TOPIC
-|Clave|Campo|Tipo de Atributo|Es Nulo|Descripción|
-|-|-|-|-|-|
-|PK|id_topic|Integer|NOT NULL|Almacena el código que identifica un tema o módulo del curso|
-|FK|id_course|VARCHAR(50)|NOT NULL|identificador del curso que determina 
+    * - Clave
+      - Campo
+      - Tipo de Atributo
+      - Es Nulo
+      - DESCRIPCIÓN
+    * - PFK
+      - id_course
+      - Varchar(50)
+      - NOT NULL
+      - Almacena el código que identifica un curso
+    * - FK
+      - id_professor
+      - Integer
+      - NOT NULL
+      - Es el profesor que imparte el curso
+    * - 
+      - title
+      - Varchar(50)
+      - NOT NULL
+      - Nombre que describa el curso
+    * - 
+      - description
+      - Varchar(50)
+      - NOT NULL
+      - Es el profesor que imparte el curso
+    * - FK
+      - id_professor
+      - Integer
+      - NOT NULL
+      - Almacena una descripción más detallada del curso
+    * - 
+      - syllabus
+      - Varchar(500)
+      - NOT NULL
+      - Almacena el temario del curso
+    * - 
+      - start_date
+      - Date
+      - NULL
+      - Almacena la fecha inicial del curso
+    * - 
+      - end_date
+      - Date
+      - NULL
+      - Almacena la fecha final del curso
+    * - 
+      - requirements
+      - Varvhar(50)
+      - NOT NULL
+      - **Este campo está en proceso de discusión**
+    * - 
+      - isPrivate
+      - Bool
+      - NOT NULL
+      - Bandera de estado que determina si el curso es privado o público **Este campo está en proceso de discusión**
 
+COURSE_HISTORY
+^^^^^^
 
-### EXAMINATION
-|Clave|Campo|Tipo de Atributo|Es Nulo|Descripción|
-|-|-|-|-|-|
-|PK|id_examination|Integer|NOT NULL|falta descripción|
-|FK|id_student|Integer|NOT NULL|falta descripción|
-|FK|id_topic|Integer|NOT NULL|falta descripción|
-||tipo|Varchar(50)|NOT NULL|falta descripción|
-||name|Varchar(50)|NOT NULL|falta descripción|
-||grade|Double|NOT NULL|falta descripción|
-|FK|id_grade|Integer|NOT NULL|falta descripción|
+.. list-table:: 
+    :widths: 5 10 10 10 50
+    :header-rows: 1
+    :stub-columns: 1
 
-### Tabla GROUP
-|Clave|Campo|Tipo de Atributo|Es Nulo|Descripción|
-|-|-|-|-|-|
-|PK|id_group|Integer|NOT NULL|Almacena el código que identifica a un grupo|
-|FK|id_student|Integer|NOT NULL|Estudiante que esta en el grupo|
-|FK|id_course|Varchar(50)|NOT NULL|Curso que se imparte en el grupo|
+    * - Clave
+      - Campo
+      - Tipo de Atributo
+      - Es Nulo
+      - DESCRIPCIÓN
+    * - P
+      - id_course_history
+      - Integer
+      - NOT NULL
+      - **Este campo debe ser discutido**
+    * - FK
+      - id_professor
+      - Integer
+      - NOT NULL
+      - Profesor que impartió el curso
+    * - 
+      - id_course
+      - VARCHAR(50
+      - NOT NULL
+      - Almacena el código que identifica a cada curso impartido por un profesor
 
-### FINAL_GRADE
-|Clave|Campo|Tipo de Atributo|Es Nulo|Descripción|
-|-|-|-|-|-|
-|PK|id_grade|Integer|NOT NULL|Almacena el código que identifica a una boleta|
-|FK|id_examination|Integer|NOT NULL|test/pruebas presentadas por el alumno para poder realizar el calculo del promedio final|
-|FK|id_student|Integer|NOT NULL|Almacena al estudiante que es dueño de la boleta|
-||final_grade|Double|NOT NULL|Almacena el promedio final de un curso|
-||isApproved|Bool|NOT NULL|Bandera que determina si el alumno aprobó o no un curso|
+COURSE_HISTORY
+^^^^^^
+
+.. list-table:: 
+    :widths: 5 10 10 10 50
+    :header-rows: 1
+    :stub-columns: 1
+
+    * - Clave
+      - Campo
+      - Tipo de Atributo
+      - Es Nulo
+      - DESCRIPCIÓN
+    * - PK
+      - id_topic
+      - Integer
+      - NOT NULL
+      - Almacena el código que identifica un tema o módulo del curso
+    * - FK
+      - id_course
+      - VARCHAR(50)
+      - NOT NULL
+      - identificador del curso que determina
+      
+EXAMINATION
+^^^^^^
+
+.. list-table:: 
+    :widths: 5 10 10 10 50
+    :header-rows: 1
+    :stub-columns: 1
+
+    * - Clave
+      - Campo
+      - Tipo de Atributo
+      - Es Nulo
+      - DESCRIPCIÓN
+    * - PK
+      - id_examination
+      - Integer
+      - NOT NULL
+      - falta descripción
+    * - FK
+      - id_student
+      - Integer
+      - NOT NULL
+      - falta descripción
+    * - FK
+      - id_topic
+      - Integer
+      - NOT NULL
+      - falta descripción
+    * - 
+      - tipo
+      - Varchar(50)
+      - NOT NULL
+      - falta descripción
+    * - 
+      - name
+      - Varchar(50)
+      - NOT NULL
+      - falta descripción
+    * - 
+      - grade
+      - Double
+      - NOT NULL
+      - falta descripción
+    * - FK
+      - id_grade
+      - Integer
+      - NOT NULL
+      - falta descripción
+      
+GROUP
+^^^^^^
+
+.. list-table:: 
+    :widths: 5 10 10 10 50
+    :header-rows: 1
+    :stub-columns: 1
+
+    * - Clave
+      - Campo
+      - Tipo de Atributo
+      - Es Nulo
+      - DESCRIPCIÓN
+    * - PK
+      - id_group
+      - Integer
+      - NOT NULL
+      - Almacena el código que identifica a un grupo
+    * - FK
+      - id_student
+      - Integer
+      - NOT NULL
+      - Estudiante que esta en el grupo
+    * - FK
+      - id_course
+      - Varchar(50)
+      - NOT NULL
+      - Curso que se imparte en el grupo
+      
+FINAL_GRADE
+^^^^^^
+
+.. list-table:: 
+    :widths: 5 10 10 10 50
+    :header-rows: 1
+    :stub-columns: 1
+
+    * - Clave
+      - Campo
+      - Tipo de Atributo
+      - Es Nulo
+      - DESCRIPCIÓN
+    * - PK
+      - id_grade
+      - Integer
+      - NOT NULL
+      - Almacena el código que identifica a una boleta
+    * - FK
+      - id_examination
+      - Integer
+      - NOT NULL
+      - test/pruebas presentadas por el alumno para poder realizar el calculo del promedio final
+    * - FK
+      - id_student
+      - Integer
+      - NOT NULL
+      - Almacena al estudiante que es dueño de la boleta
+    * - 
+      - final_grade
+      - Double
+      - NOT NULL
+      - Almacena el promedio final de un curso
+    * - 
+      - isApproved
+      - Bool
+      - NOT NULL
+      - ABandera que determina si el alumno aprobó o no un curso
 
 
