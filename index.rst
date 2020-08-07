@@ -7,12 +7,7 @@
    installing
    configuring
    contributing
-
-.. toctree::
-   :maxdepth: 1
-   :hidden:
-
-   changelog
+   sections/changelog
 
 .. toctree::
     :maxdepth: 2
