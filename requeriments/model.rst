@@ -1,17 +1,23 @@
+
+***************
+Modelo de datos
+***************
+
+.. contents:: Table of Contents
+
 Control de Versiones
---------------------
+==============
 
 .. figure:: https://user-images.githubusercontent.com/64877172/89589770-e8c9ca80-d80b-11ea-8734-3b20a3e73da1.jpeg
    :alt: controldeversiones
 
-   controldeversiones
+   
 Diagrama Entidad Relación
--------------------------
+==============
 
 .. figure:: https://user-images.githubusercontent.com/64877172/89589741-d059b000-d80b-11ea-9623-a4a731ff61d6.jpeg
    :alt: diagramae-r
 
-   diagramae-r
 Descripción de tablas
 =====================
 
@@ -92,7 +98,7 @@ COURSE
 |         | isPrivate       | Bool               | NOT NULL   | Bandera de estado que determina si el curso es privado o público **Este campo está en proceso de discusión**   |
 +---------+-----------------+--------------------+------------+----------------------------------------------------------------------------------------------------------------+
 
-COURSE\_HISTORY
+COURSE\_HISTORY  (*En observación*)
 ~~~~~~~~~~~~~~~
 
 +---------+-----------------------+--------------------+------------+----------------------------------------------------------------------------+
