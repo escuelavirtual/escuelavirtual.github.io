@@ -5,6 +5,9 @@ Registro de cambios
 Este es el documento que contendrá el registro histórico de cambios. El formato será el detallado a continuación:
 
 
+.. code-block:: python
+    :caption: Example code.
+    
     Version 1.2.3 (number version)
     -------------
 
