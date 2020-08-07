@@ -24,13 +24,13 @@ sys.path.append(os.path.abspath('./demo/'))
 import sphinx_rtd_theme
 from sphinx.locale import _
 
-project = u'Read the Docs Sphinx Theme'
+project = u'Plataforma de Aprendizaje en línea'
 slug = re.sub(r'\W+', '-', project.lower())
 version = '0.5.0'
 release = '0.5.0'
-author = u'Dave Snider, Read the Docs, Inc. & contributors'
+author = u'Plataforma de Aprendizaje en línea & contributors'
 copyright = author
-language = 'en'
+language = 'es'
 
 extensions = [
     'sphinx.ext.intersphinx',
