@@ -250,6 +250,10 @@ Issue Tracker | Granted to contributors who express a strong interest in spendin
 Committer | Granted to contributors who want to handle the actual pull request merges, tagging new versions, etc. Committers should have a good level of familiarity with the codebase, and enough context to understand the implications of various changes, as well as a good sense of the will and expectations of the project team.
 Admin/Owner | Granted to people ultimately responsible for the project, its community, etc.
 
+If you are not yet part of the Organization on Github, send me your username and which team you want to be part of, backend or frontend, and you will be added as soon as possible.
+
+Once you have joined the Organization team, you will be able to see the projects, where you will find a list with various tasks to perform. Also, you can go to the general documentation of the product where you will find a more detailed explanation of each task.
+
 ## Attribution
 
 This guide was generated using the WeAllJS `CONTRIBUTING.md` generator. [Make your own](https://npm.im/weallcontribute)!
