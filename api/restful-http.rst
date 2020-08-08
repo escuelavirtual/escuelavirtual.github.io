@@ -8,7 +8,9 @@ Para documentar sus endpoints en este archivo, deben utilizar el siguiente forma
 Code
 ````
 
-..  code-block:: python
+.. code-block:: python
+    :caption: Example code.
+    
     ..  http:example:: curl wget httpie
        :request: ../optional/rel/path/to/plaintext/request
        :response: ../optional/rel/path/to/plaintext/response
