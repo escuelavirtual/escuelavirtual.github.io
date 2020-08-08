@@ -1,5 +1,5 @@
 **************************
-Read the Docs Sphinx Theme
+Aprendizaje en Linea
 **************************
 
 .. image:: https://img.shields.io/pypi/v/sphinx_rtd_theme.svg
@@ -15,56 +15,19 @@ Read the Docs Sphinx Theme
   :target: http://sphinx-rtd-theme.readthedocs.io/en/latest/?badge=latest
   :alt: Documentation Status
 
-This Sphinx_ theme was designed to provide a great reader experience for
-documentation users on both desktop and mobile devices. This theme is used
-primarily on `Read the Docs`_ but can work with any Sphinx project. You can find
-a working demo of the theme in the `theme documentation`_
+La idea de este proyecto colaborativo nació gracias a la comunidad en Discord de Fazt. Como estudiante y como docente, además de ser desarrollador para aplicaciones web, siempre he tenido las ganas de desarrollar una plataforma dedicada a la gestión escolar.
 
-.. _Sphinx: http://www.sphinx-doc.org
-.. _Read the Docs: http://www.readthedocs.org
-.. _theme documentation: https://sphinx-rtd-theme.readthedocs.io/en/latest/
+Debido a la problematica actual, todas las instituciones educativas han tenido que migrar la metodología de transmitir sus contenidos de forma online y gracias a la comunidad, en un taller donde se explicaba como trabajar en equipo, y además, dado que la mayoria de los participantes son estudiantes con ganas colaborar en varios proyectos y aprender conjuntamente, surgió esta iniciativa.
 
-Installation
-============
+Nuestro proyecto se encuentra disponible en `Github`_
 
-This theme is distributed on PyPI_ and can be installed with ``pip``:
 
-.. code:: console
+.. _GitHub: https://github.com/escuelavirtual
 
-   $ pip install sphinx-rtd-theme
-
-To use the theme in your Sphinx project, you will need to add the following to
-your ``conf.py`` file:
-
-.. code:: python
-
-    import sphinx_rtd_theme
-
-    extensions = [
-        ...
-        "sphinx_rtd_theme",
-    ]
-
-    html_theme = "sphinx_rtd_theme"
-
-For more information read the full documentation on `installing the theme`_
-
-.. _PyPI: https://pypi.python.org/pypi/sphinx_rtd_theme
-.. _installing the theme: https://sphinx-rtd-theme.readthedocs.io/en/latest/installing.html
-
-Configuration
-=============
-
-This theme is highly customizable on both the page level and on a global level.
-To see all the possible configuration options, read the documentation on
-`configuring the theme`_.
-
-.. _configuring the theme: https://sphinx-rtd-theme.readthedocs.io/en/latest/configuring.html
 
 Contributing
 ============
 
-If you would like to help modify or translate the theme, you'll find more
-information on contributing in our `contributing guide`_.
+Para colaborar con este proyecto, puedes encontrar más información en `contributing guide`_.
 
-.. _contributing guide: https://sphinx-rtd-theme.readthedocs.io/en/latest/contributing.html
+.. _contributing guide: https://plataforma-de-aprendizaje-en-linea.readthedocs.io/es/latest/contributing.html
