@@ -5,7 +5,8 @@ Api Endpoints
 
 Para documentar sus endpoints en este archivo, deben utilizar el siguiente formato:
 
-* Syntax:
+Code
+````
 
 ..  code-block:: rst
     ..  http:example:: curl wget httpie
@@ -14,6 +15,14 @@ Para documentar sus endpoints en este archivo, deben utilizar el siguiente forma
 
        Raw plaintext HTTP request example, which is
        required only when :request: is not specified.
+       
+.. note::
+
+   Request and response must be separated with two or more blank lines and
+   the first response line must start with string "HTTP/" or "HTTP ".
+
+Result
+``````
        
 ..  http:example:: curl wget httpie
        :request: ../endpoints/001.request.txt
