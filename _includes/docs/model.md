@@ -41,22 +41,26 @@ Si vas a hacer una modificación al diagrama ER, llena el formato de control de 
 ## Diccionario de Datos
 
 ###  USER
+
 |Clave|Campo|Tipo de Atributo|Es Nulo|Descripción|
 |-|-|-|-|-|
 |P|id_user|Integer|NULL|Almacena el código que identifica a cada usuario|
 
 ### STUDENT
+
 |Clave|Campo|Tipo de Atributo|Es Nulo|Descripción|
 |-|-|-|-|-|
 |PFK|id_student|Integer|NULL|Almacena el código que identifica a cada estudiante|
 
 ### PROFESSOR
+
 |Clave|Campo|Tipo de Atributo|Es Nulo|Descripción|
 |-|-|-|-|-|
 |PFK|id_professor|Integer|NULL|Almacena el código que identifica a cada profesor|
 ||valuation|Integer|Almacena la valoración que tiene un profesor|
 
 ### COURSE
+
 |Clave|Campo|Tipo de Atributo|Es Nulo|Descripción|
 |-|-|-|-|-|
 |PFK|id_course|Varchar(50)|NOT NULL|Almacena el código que identifica un curso|
@@ -71,6 +75,7 @@ Si vas a hacer una modificación al diagrama ER, llena el formato de control de 
 
 
 ### COURSE_HISTORY
+
 |Clave|Campo|Tipo de Atributo|Es Nulo|Descripción|
 |-|-|-|-|-|
 |P|id_course_history|Integer|NOT NULL|**Este campo debe ser discutido**|
@@ -78,6 +83,7 @@ Si vas a hacer una modificación al diagrama ER, llena el formato de control de 
 ||id_course|VARCHAR(50)|NOT NULL|Almacena el código que identifica a cada curso impartido por un profesor
 
 ### TOPIC
+
 |Clave|Campo|Tipo de Atributo|Es Nulo|Descripción|
 |-|-|-|-|-|
 |PK|id_topic|Integer|NOT NULL|Almacena el código que identifica un tema o módulo del curso|
@@ -85,6 +91,7 @@ Si vas a hacer una modificación al diagrama ER, llena el formato de control de 
 
 
 ### EXAMINATION
+
 |Clave|Campo|Tipo de Atributo|Es Nulo|Descripción|
 |-|-|-|-|-|
 |PK|id_examination|Integer|NOT NULL|falta descripción|
@@ -96,6 +103,7 @@ Si vas a hacer una modificación al diagrama ER, llena el formato de control de 
 |FK|id_grade|Integer|NOT NULL|falta descripción|
 
 ### Tabla GROUP
+
 |Clave|Campo|Tipo de Atributo|Es Nulo|Descripción|
 |-|-|-|-|-|
 |PK|id_group|Integer|NOT NULL|Almacena el código que identifica a un grupo|
@@ -103,6 +111,7 @@ Si vas a hacer una modificación al diagrama ER, llena el formato de control de 
 |FK|id_course|Varchar(50)|NOT NULL|Curso que se imparte en el grupo|
 
 ### FINAL_GRADE
+
 |Clave|Campo|Tipo de Atributo|Es Nulo|Descripción|
 |-|-|-|-|-|
 |PK|id_grade|Integer|NOT NULL|Almacena el código que identifica a una boleta|
