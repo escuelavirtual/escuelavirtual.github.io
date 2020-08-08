@@ -5,20 +5,16 @@
    :maxdepth: 2
 
    installing
-   configuring
+   started
    contributing
    sections/changelog
 
 .. toctree::
     :maxdepth: 2
-    :numbered:
-    :caption: Demo Documentation
+    :caption: Api Documentation
 
-    demo/structure
-    demo/demo
-    demo/lists_tables
-    demo/api
-
+    api/restful-http
+  
 .. toctree::
     :maxdepth: 3
     :numbered:
