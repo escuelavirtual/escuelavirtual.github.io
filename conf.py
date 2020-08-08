@@ -77,6 +77,7 @@ html_logo = "demo/static/logo-wordmark-light.svg"
 html_show_sourcelink = True
 
 htmlhelp_basename = slug
+httpexample_scheme = 'https'
 
 
 latex_documents = [
