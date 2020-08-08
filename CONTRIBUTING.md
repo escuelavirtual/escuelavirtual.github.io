@@ -91,6 +91,8 @@ Then in your terminal:
 * `npm install`
 * `npm test`
 
+Rename the file located in the main directory `.env.example` to `.env` if you haven't already done so.
+
 And you should be ready to go!
 
 ## Contribute Documentation
