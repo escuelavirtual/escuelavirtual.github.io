@@ -489,5 +489,15 @@ FINAL_GRADE
 |             |             |             |             | dueño de la |
 |             |             |             |             | boleta      |
 +-------------+-------------+-------------+-------------+-------------+
-|             | final_grade | Double      | NOT NULL    |             |
+|             | final_grade | Double      | NOT NULL    | Almacena el |
+|             |             |             |             | promedio    |
+|             |             |             |             | final de un |
+|             |             |             |             | curso       |
++-------------+-------------+-------------+-------------+-------------+
+|             | isApproved  | Bool        | NOT NULL    | Bandera que |
+|             |             |             |             | determina   |
+|             |             |             |             | si el       |
+|             |             |             |             | alumno      |
+|             |             |             |             | aprobó o no |
+|             |             |             |             | un curso    |
 +-------------+-------------+-------------+-------------+-------------+
