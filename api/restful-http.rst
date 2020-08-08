@@ -17,5 +17,5 @@ Para documentar sus endpoints en este archivo, deben utilizar el siguiente forma
        
 ..  http:example:: curl wget httpie
        :request: ../endpoints/001.request.txt
-       :response: ../endpoints/001.responde.txt
+       :response: ../endpoints/001.response.txt
 
