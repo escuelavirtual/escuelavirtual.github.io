@@ -99,7 +99,7 @@ Estudiante o profesor busca un curso
 
 **Final esperado:** El sistema lista resultados de busqueda
 
-**Responsable:** ...
+**Responsable:** @jonathanLozaiza @ThiagoPuyelli
 
 **Propósito:** Listado de cursos solicitado por un estudiante o profesor.
 
