@@ -11,6 +11,12 @@
 
 .. toctree::
     :maxdepth: 2
+    :caption: Style Guide
+
+    frontend/documentation
+
+.. toctree::
+    :maxdepth: 2
     :caption: Api Documentation
 
     api/restful-http
