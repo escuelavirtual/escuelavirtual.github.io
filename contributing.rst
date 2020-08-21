@@ -1,6 +1,8 @@
 Contributing
 ============
 
+.. contents:: Table of Contents
+
 Introduction
 ------------
 
