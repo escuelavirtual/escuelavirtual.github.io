@@ -470,22 +470,6 @@ Some notes:
 
 .. _GitHub's own review feature: https://help.github.com/articles/about-pull-request-reviews/
 
-Merge Pull Requests
--------------------
-
-`Needs Collaborator`_: Committer
-
-TBD - need to hash out a bit more of this process.
-
-Tag A Release
--------------
-
-`Needs Collaborator`_: Committer
-
-TBD - need to hash out a bit more of this process. The most important
-bit here is probably that all tests must pass, and tags must use
-`semver`_.
-
 Join the Project Team
 ---------------------
 
