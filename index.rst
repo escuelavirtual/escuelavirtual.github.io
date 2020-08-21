@@ -16,6 +16,12 @@
 
 .. toctree::
     :maxdepth: 2
+    :caption: Design Documentation
+
+    design/methodology
+
+.. toctree::
+    :maxdepth: 2
     :caption: Api Documentation
 
     api/restful-http
