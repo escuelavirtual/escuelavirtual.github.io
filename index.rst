@@ -12,7 +12,8 @@
     :maxdepth: 2
     :caption: Style Guide
 
-    frontend/documentation
+    styles/javascript
+    styles/css
 
 .. toctree::
     :maxdepth: 2
