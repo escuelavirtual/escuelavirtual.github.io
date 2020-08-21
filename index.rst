@@ -4,7 +4,6 @@
    :caption: Documentation
    :maxdepth: 2
 
-   installing
    started
    contributing
    sections/changelog
