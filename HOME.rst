@@ -24,10 +24,3 @@ Nuestro proyecto se encuentra disponible en `Github`_
 
 .. _GitHub: https://github.com/escuelavirtual
 
-
-Contributing
-============
-
-Para colaborar con este proyecto, puedes encontrar más información en `contributing guide`_.
-
-.. _contributing guide: https://plataforma-de-aprendizaje-en-linea.readthedocs.io/es/latest/contributing.html
