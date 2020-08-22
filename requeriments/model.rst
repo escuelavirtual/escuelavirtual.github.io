@@ -87,31 +87,29 @@ Descripción de tablas
     * - NOMBRE DE TABLA
       - DESCRIPCIÓN
     * - USER
-      - Almacena el código (llave primaria), nombre, apellidos, email  y password del usuario.
+      - Representa una coleecion de un usuarios. Los usuarios pueden tener diferentes roles, los estudiantes y profesores tendran el rol de usuario. Luego existe el rol de moderador y el rol de administrador.
     * - PROFESSOR
-      - La tabla se encarga de guardar la información del id de un profesor y la valoración que tiene éste(Si es un buen o mal profesor) como referencias.
+      - Representa una coleccion de profesores o instructores. Cada profesor esta asociado a un usuario.
     * - STUDENT
-      - Esta tabla sólo se encargará de almacenar los identificadores de los estudiantes.
+      - Representa una coleccion de estudiantes o alumnos. Cada estudiante esta asociado a un usuario.
     * - COURSE
-      - Se retiene información a cerca de la llave primaria del curso, llave foránea del profesor, título o nombre de la asignatura, una breve descripción del curso, el temario, fecha de inicio, fecha de finalización, requerimientos y si es privado o público el curso.
-    * - TOPIC
-      - Nos ayuda a preservar información de la llave primaria de éste, la llave foránea del curso a la cual pertenece, y el nombre del tema o sección.
-    * - EXAMINATION
-      - Nos ayuda a guardar toda la información referente a las pruebas aplicadas por un profesor; el id de la evaluación, la llave foránea del estudiante, la llave foránea del tema, el tipo de examen que se aplicará, nombre del examen, calificación y  la llave foránea de la calificación final.
-    * - QUESTION
-      - Esta tabla hace que persista la información de una pregunta que forma ṕarte de un examen, los campos que tiene son su llave primaria, la llave foránea de la realción entre EXAMINATION y la tabla actual, el campo content es el apartado que guarda el contenido de la pregunta y el campo open_answer es donde se quedará guardada la respuesta correcta de la pregunta.
-    * - ANSWER
-      - La tabla tiene tres campos, la llave foránea generada por la relación entre QUESTION y ANSWER
+      - Representa una coleccion de cursos. En esta coleccion, solo se almacena los metadatos del curso, como el titulo, la descripcion, la visibilidad, entre otros detalles. Cada curso esta asociado a un profesor.
     * - MODULE
-      - Esta tabla la función de guardar los modulos o secciones en las cuales se dividirá un curso, tiene su llave primaria, una llave foránea de la tabla COURSE y la descripción de qué se va a tratar la unidad o modulo.
+      - Representa una coleccion de modulos o bloques de contenido en las cuales se pueden dividir un curso. Cada modulo esta asociado a un curso.
+    * - TOPIC
+      - Representa una coleccion de topicos o documentos. Esta tabla almancenara el contenido de un documento. Si el formato sera de texto plano, el contenido se guardara directamente en esta tabla, si el mismo sera de formato video, pdf u otro archivo embebido, se almacenara su url. Cada topico o documento esta asociado a un modulo.
+    * - EXAMINATION
+      - Representa una coleccion de examenes o evaluaciones. Cada evaluacion esta asociado a un modulo de un curso. 
+    * - QUESTION
+      - Representa una coleccion de preguntas y respuestas en caso de que las haya. Cada pregunta esta asociada a un examen.
     * - GROUP_ACTIVITY
-      - La tabla almacena la informcaión de las actividades que creará un profesor en un curso, tiene su llave primaria, una llave foránea de la tabla MODULE, campos para el nombre de la actividad, las intrucciones para guiar a los alumnos, la calificación que obtendrá y una sección para las observaciones.
+      - Representa una coleccion de grupos de estudio dentro de un curso. Cada grupo esta asoaciado a un curso.
     * - GRADE_REPORT_PER_COURSE
       - Esta tabla almacenará la boleta del estudiante de un curso, los campos que tiene esta tabla son su llave primaria la llave foránea generada por la relación de esta tabla con STUDENT, el campo final_grade y isApproved, que determinará si el estudiante pasó el curso.
     * - ENROLLMENT
-      - Como la relación entre STUDENT Y COURSES es de muchos a muchos se require de una tabla intermedia que cumpla como unión de dichas tablas albergando las claves foráneas de las mismas.
+      - En esta tabla, se visualizan las relaciones de un estudiante con un curso. El listado de estudiantes de un curso o los cursos que un estudiante esta inscripto, se muestran en esta coleccion.
     * - CATEGORY
-      - Un curso pertenece a una categoría por lo que es necesario tener una tabla que albergué información de las categorías, los campos que tiene son: su llave primaria, name  y slug que éste último campo se añadió como alternativa ya que no sabemos como el frontend pedirá los cursos, si los pedirá por id o por slug.
+      - Representa una coleccion de categorias o ejes tematicos principales que tendra la plataforma.
 
 Diccionario de Datos
 ==============
