@@ -19,8 +19,30 @@ La idea de este proyecto colaborativo nació gracias a la comunidad en Discord d
 
 Debido a la problematica actual, todas las instituciones educativas han tenido que migrar la metodología de transmitir sus contenidos de forma online y gracias a la comunidad, en un taller donde se explicaba como trabajar en equipo, y además, dado que la mayoria de los participantes son estudiantes con ganas colaborar en varios proyectos y aprender conjuntamente, surgió esta iniciativa.
 
+Este es un proyecto colaborativo, cuyo objetivo es el aprendizaje de las distintas tecnologias de desarrollo y el trabajo en equipo.
+
+Los principales requerimientos de la plataforma son:
+
+- Gestion de alumnos.
+- Gestion de profesores.
+- Gestion de cursos virtuales sobre diversos temas, tales como matematicas, fisica, programacion, ciencia, etc...
+- Chat en linea para interactuar entre los alumnos que pertenecen a la misma clase.
+- Gestion de examenes o tests de un curso para los estudiantes.
+- Documentacion del proyecto.
+
+Son bienvenidos otros requerimientos.
+
+Tecnologias que utilizamos actualmente.
+
+- Backend: NodeJs + Express + Tests + REST Api.
+- Frontend: React.
+- Base de datos: MySQL y MongoDB
+- Ademas usaremos distintas aplicaciones para gestionar el proyecto, tales como Github, ClickUp, Notion, entre otras.
+
 Nuestro proyecto se encuentra disponible en `Github`_
 
+Contamos como centro de operaciones un servidor de `Discord`_
 
 .. _GitHub: https://github.com/escuelavirtual
+.. _Discord: https://discord.gg/hhfkPP3
 
