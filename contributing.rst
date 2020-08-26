@@ -3,56 +3,38 @@ Contributing
 
 .. contents:: Table of Contents
 
-Introduction
+Introducción
 ------------
 
-Thank you so much for your interest in contributing!. All types of
-contributions are encouraged and valued. See the `table of contents`_
-for different ways to help and details about how this project handles
-them!📝
+¡Muchas gracias por su interés en contribuir!. Se fomentan y valoran todo tipo de contribuciones. Consulte la `tabla de contenido`_ para diferentes formas de ayudar y detalles sobre cómo este proyecto los maneja!
 
-Please make sure to read the relevant section before making your
-contribution! It will make it a lot easier for us maintainers to make
-the most of it and smooth out the experience for all involved. 💚
+Por favor, asegúrese de leer la sección relevante antes de hacer su contribución! Hará que sea mucho más fácil para nosotros, sacar el máximo provecho de ella y suavizar la experiencia para todos los involucrados.
 
-The `Project Team`_ looks forward to your contributions. 🙌🏾✨
+El `Equipo del proyecto`_ espera con ansias sus contribuciones.
 
-Request Support
+Solicitar soporte
 ---------------
 
-If you have a question about this project, how to use it, or just need
-clarification about something:
+Si tiene alguna pregunta sobre este proyecto, cómo usarlo, o simplemente necesita una aclaración sobre algo:
 
--  Open an issue at
-   https://github.com/escuelavirtual/escuelavirtual.github.io/issues or
-   in the corresponding repositories
--  Provide as much context as you can about what you're running into.
--  Provide project and platform versions (nodejs, npm, etc), depending
-   on what seems relevant. If not, please be ready to provide that
-   information if maintainers ask for it.
+-  Registre un `issue` en https://github.com/escuelavirtual/escuelavirtual.github.io/issues o en los repositorios correspondientes
+-  Proporcione todo el contexto que pueda sobre el mismo.
+-  Proporcione versiones de proyectos y plataformas (nodejs, npm, etc.), dependiendo de lo que parezca relevante. Si no es así, por favor esté listo para proporcionar esa información en caso de que se lo requiera.
 
-Once it's filed:
+Una vez que se registre:
 
--  The project team will `label the issue`_.
--  Someone will try to have a response soon.
--  If you or the maintainers don't respond to an issue for 30 days, the
-   `issue will be closed`_. If you want to come back to it, reply (once,
-   please), and we'll reopen the existing issue. Please avoid filing new
-   issues as extensions of one you already made.
+-  El equipo del proyecto `etiquetara su problema`_.
+-  Alguien tratará de tener una respuesta pronto.
+-  Si usted o el equipo no responde a un problema durante 30 días, `el problema se cerrara`_. Si desea volver a él, responda (una vez, por favor), y volveremos a abrir el problema existente. Por favor, evite presentar nuevos problemas como extensiones de uno que ya hizo.
 
-Report an Error or Bug
+Reportar un Error o Bug
 ----------------------
 
-If you run into an error or bug with the project:
+Si se encuentra con un error o bug con el proyecto:
 
--  Open an Issue at
-   https://github.com/escuelavirtual/escuelavirtual.github.io/issues or
-   in the corresponding repositories
--  Include *reproduction steps* that someone else can follow to recreate
-   the bug or error on their own.
--  Provide project and platform versions (nodejs, npm, etc), depending
-   on what seems relevant. If not, please be ready to provide that
-   information if maintainers ask for it.
+-  Abra un issue en https://github.com/escuelavirtual/escuelavirtual.github.io/issues o en los repositorios correspondientes
+-  Incluya los *pasos de reproducción* para que otra persona pueda volver a crear el error o bug por sí mismo.
+-  Proporcione versiones de proyectos y plataformas (nodejs, npm, etc.), dependiendo de lo que parezca relevante. Si no es así, por favor esté listo para proporcionar información en caso de que se lo requiera.
 
 Once it's filed:
 
@@ -72,10 +54,10 @@ Once it's filed:
 -  ``critical`` issues may be left open, depending on perceived
    immediacy and severity, even past the 30 day deadline.
 
-.. _table of contents: #toc
-.. _Project Team: #join-the-project-team
-.. _label the issue: #label-issues
-.. _issue will be closed: #clean-up-issues-and-prs
+.. _tabla de contenido: #toc
+.. _Equipo del proyecto: #join-the-project-team
+.. _etiquetara su problema: #label-issues
+.. _el problema se cerrara: #clean-up-issues-and-prs
 .. _implemented by someone: #contribute-code
 
 Request a Feature
