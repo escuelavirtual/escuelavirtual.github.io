@@ -1,3 +1,12 @@
+---
+layout: default
+title: Aprendizaje en linea
+nav_order: 1
+description: "Este es un proyecto colaborativo, cuyo objetivo es el aprendizaje de las distintas tecnologias de desarrollo y el trabajo en equipo."
+permalink: /
+last_modified_date: 2020-08-26T17:54:08+0000
+---
+
 # Aprendizaje en linea.
 
 ## Acerca del proyecto
