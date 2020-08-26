@@ -5,7 +5,6 @@
    :maxdepth: 2
 
    started
-   contributing
    sections/changelog
 
 .. toctree::
