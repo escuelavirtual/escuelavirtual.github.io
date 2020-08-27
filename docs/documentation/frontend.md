@@ -24,25 +24,21 @@ https://github.com/escuelavirtual/frontend
 
 ## Tecnologias implementadas
 
-# Esquema
-
 ![../../assets/tecnologias-front-end.png](../../assets/tecnologias-front-end.png)
 
-### ¿ Por que React?
+### ¿Por que React?
 
-- Tiene una de las curvas de aprendizaje mas bajas.
 - Nos ofrece bastante flexibilidad a la hora de trabajar con diversos stacks.
-- Mejor rendimiento frente a otros frameworks.
-- La usan grandes empresas como Facebook, Netflix, Instagram entre otros.
+- Es usado por grandes empresas como Facebook, Netflix, Instagram entre otros.
 - Tiene una documentación en español excelente.
-- Mas versatilidad con el virtual DOM.
-- Facilidad de pasar de web a móvil con React Native.
-- Una gigantesca comunidad facilitando su avance.
+- Versatilidad con el virtual DOM.
+- Facilidad de adaptar nuestra web a dispotivivos móviles con React Native.
+- Cuenta con una gran comunidad de usuarios facilitando su aprendizaje.
 - Es Open Source.
 
-‼️**Mas Información en: [https://reactjs.com](https://reactjs.com)**
+**Mas Información en: [https://es.reactjs.org/](https://es.reactjs.org/)**
 
-### ¿ Por que Next?
+### ¿Porqué NextJs?
 
 - No necesita una configuración.
 - Híbrido: SSG y SSR.
@@ -56,46 +52,45 @@ https://github.com/escuelavirtual/frontend
 
 ‼️**Mas Información: [https://nextjs.org/](https://nextjs.org/)**
 
-### ¿ Por que Node?
+### ¿Porqué Node.js?
 
-- Esta basado en el motor V8 de Chrome (Uno de los mas avanzados)
+- Está basado en el motor V8 de Chrome (Uno de los mas avanzados)
 - Operaciones de entrada y salida sin bloqueos.
 - Orientado a Eventos.
 - Es liviano y eficiente.
 - Nos facilita el desarrollo con paquetes propios de Node (Express, Koa, happy, etc)
 - Nos facilita la integración de sockets.
 
-‼️ **Mas información: [https://nodejs.com](https:/node.js)
+**Mas información: [https://nodejs.org/es/](https://nodejs.org/es/)**
 
-### ¿ Por que Typescript?
+### ¿Porqué Typescript?
 
-- Se puede escalar de una forma optima tanto en proyectos medianos y grandes.
+- Se puede escalar de una forma óptima tanto en proyectos medianos como en grandes.
 - Lenguaje de tipado fuerte, lo que permitirá mantener mejor el código.
 - Se complementa perfectamente con VS Code, dándonos ayudas, autocompletado, etc
 - Curva de aprendizaje muy baja si sabes Javascript.
-- Muy similar a otros lenguajes y es fácil hacer el cambio a Typescript.
 - Lenguaje desarrollado por Microsoft.
 - Integración fácil con otros editores diferentes a VS Code.
 - Lenguaje Open Source.
-- Cuenta con uno de los repositorios mas activos de Github.
-- Lo usan grandes empresas: La misma Microsoft, Skype, Slack entre otros.
+- Cuenta con uno de los repositorios más activos de Github.
+- Es usado por grandes empresas: La misma Microsoft, Skype, Slack entre otros.
 - Podemos usar todo lo que hemos aprendido con JavaScript.
-- Podemos usar el lenguaje orientado a objetos mas optimamente.
+- Podemos usar el lenguaje orientado a objetos más optimamente.
 - Se puede trabajar con Interfaces y Genéricos.
 - Se maneja mucho mejor el tema de Herencia con respecto a JavaScript.
 - Chequeo de errores en tiempo de ejecución.
 
-**Mas información: [https://typescrpt.com](https://typescrpt.com)**
+**Mas información: [https://www.typescriptlang.org/](https://www.typescriptlang.org/)**
 
-### ¿ Por que Sass?
+### ¿Porqué Sass?
 
 - Reduce el tiempo para crear y mantener mi CSS.
-- Permite una organización modular de mis estilos.
+- Permite una organización modular de los estilos.
 - Proporciona estructuras de lenguajes de programación.
 - Permite generar distintos tipos de salida CSS de manera automática.
 - Herramientas, librerías, comunidad etc. 
 
-‼️ **Mas información: [https://sass.com](https://sass.com)**
+‼️ **Mas información: [https://sass-lang.com/](https://sass-lang.com/)**
 
 ## Metodologías
 
@@ -105,13 +100,13 @@ https://github.com/escuelavirtual/frontend
 
 Utilizaremos este patrón para estructurar las carpetas de una forma mas organizada y que a la larga sea mas fácil mantener el código.
 
-[Estructura de Archivos / Patron 7 - 1 SASS](https://pattern7-1.com)
+[Estructura de Archivos / Patron 7 - 1 SASS](https://sass-guidelin.es/#architecture)
 
 ### Storybook
 
 Usaremos Storybook para poder testear los diferentes componentes que iremos creando y para que podamos tener una vista rápida de como van quedando estos componentes.
 
-[Storybook](https://storybook.com)
+[Storybook](https://storybook.js.org/)
 
 ### Atomic Design
 
