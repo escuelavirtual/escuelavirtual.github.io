@@ -29,6 +29,7 @@ En este tutorial, vamos a desarrollar una aplicación que simule el comportamien
 ### Requerimientos
 
 Inicialmente debemos conocer cuales serán los requerimientos de esta aplicación, para poder desarrollar los tests.
+{: .bd-callout .bd-callout-info }
 
 1. El usuario debe poder agregar una tarea a su lista.
 2. El usuario debe poder  consultar el listado de todas las tareas
@@ -42,6 +43,7 @@ En primer lugar, debemos configurar un entorno de trabajo con NodeJs, utilizamos
 El codigo final con sus correspondientes pasos estarán disponible en [https://github.com/alejandro088/tdd-node-example/](https://github.com/alejandro088/tdd-node-example/tree/01-getting-started)
 
 Para comenzar con el ejemplo, deben dirigirse a la rama `01-getting-started` del repositorio.
+{: .bd-callout .bd-callout-warning }
 
 ### Elegir un requisito
 
@@ -163,6 +165,7 @@ Task tests
 ```
 
 Si les aparece otro error diferente a éste, puede que no tenga correctamente configurado el comando test de su `package.json`. Para este ejemplo, en este repositorio de prueba, los scripts son los siguientes.
+{: .bd-callout .bd-callout-danger }
 
 ```json
 "scripts": {
