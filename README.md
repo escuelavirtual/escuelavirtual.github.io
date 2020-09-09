@@ -15,3 +15,7 @@ Para mayor información consulte en: https://escuelavirtual.github.io/
 ## Contribuir
 
 Si desea contribuir en este proyecto, lea  nuestro [CONTRIBUTING.md](CONTRIBUTING.md)
+
+## Contribuidores
+
+Si has contribuido en este proyecto, puedes incluir tu nombre o imagen con tu enlace a tu perfil de Github
