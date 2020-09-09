@@ -24,6 +24,19 @@ https://github.com/escuelavirtual/backend
 Esta documentación, momentaneamente se encuentra disponible en:
 https://school.webxander.com/es/latest/
 
+## Tecnologias implementadas
+
+Actualmente se está trabajando con NodeJs + Express utilizando Javascript.
+
+## Metodologías
+
+### TDD
+Utilizamos la metodología TDD (Test Driven Development) o Desarrollo Guiado por Pruebas, utilizando Mocha + Chai.
+
+### Arquitectura 3 capas
+
+Para una mayor organización del desarrollo, implementamos el uso de la arquitectura de 3 capas.
+
 ## REST Api 
 
 https://elearning.stoplight.io/
