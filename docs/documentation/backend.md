@@ -40,3 +40,7 @@ Para una mayor organización del desarrollo, implementamos el uso de la arquitec
 ## REST Api 
 
 https://elearning.stoplight.io/
+
+## Diccionario de datos
+
+https://dbdocs.io/alejandro088/Elearning
