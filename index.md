@@ -54,7 +54,3 @@ Contamos como centro de operaciones un servidor de [Discord]
   [Github]: https://github.com/escuelavirtual
   [Discord]: https://discord.gg/hhfkPP3
   
-## Recursos y documentación
-
-Esta documentación se ha movido <a href="https://plataforma-de-aprendizaje-en-linea.readthedocs.io/es/latest/">aquí</a>
-  
