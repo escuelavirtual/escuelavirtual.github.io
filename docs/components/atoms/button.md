@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Style Button
+title: Button
 parent: Atoms
 grand_parent: Components
 ---
 
-## Style Button
+## Button
 
-Aqui definiremos el componente Button con sus parametros.
+Aqui definiremos el componente Button con sus estilos y parametros.
