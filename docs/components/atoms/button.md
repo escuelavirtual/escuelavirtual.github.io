@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Style Button
-parent: components
+parent: atoms
 nav_order: 5
 ---
 
