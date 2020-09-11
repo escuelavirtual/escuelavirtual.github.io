@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Atoms
-nav_order: 3
-parent: components
+nav_order: 1
+parent: Components
 has_children: true
 permalink: /docs/components/atoms
 ---
