@@ -4,7 +4,7 @@ title: Molecules
 nav_order: 1
 parent: Components
 has_children: true
-permalink: /docs/components/molecues
+permalink: /docs/components/molecules
 ---
 
 # Documentation of Library Molecules
